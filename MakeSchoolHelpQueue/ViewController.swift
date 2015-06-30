@@ -105,11 +105,11 @@ class ViewController: UIViewController {
             
             UIApplication.sharedApplication().presentLocalNotificationNow(localNotification)
         }
-        
+       
     }
 
     func update() {
-
+        
         var pathname = webView.stringByEvaluatingJavaScriptFromString("window.location.pathname")
         println("Update path: \(pathname)")
         if pathname == "/login" {
